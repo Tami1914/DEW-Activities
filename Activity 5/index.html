@@ -20,4 +20,15 @@
         <li>Each table cell must contain a text like: "Row: X, Col: Y"</li>
       </ol>
   </body>
+
+  <form onsubmit="createTable(event)">
+    <label for="GET-row">Row:</label>
+    <input type="number" name="row" id="GetRows"></input>
+    <label for="GET-column">Columns:</label>
+    <input type="number" name="column" id="GetColumns"></input>
+    <button>generate table</button>
+  </form>
+  <div id="container"></div>
+  <script src="table.js"></script>
+
 </html>

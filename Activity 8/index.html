@@ -28,19 +28,22 @@
       <li>When 1 audio ends the following one must estart playing automatically</li>
     </ul>
 
-    <ol>
-      <li>music1.mp3</li>
-      <li>music2.mp3</li>
-      <li>music3.mp3</li>
+    <ol id="playlist">
+      <li>music1.mp3<i class="fa fa-play"></i></li>
+      <li>music2.mp3<i class="fa fa-play hidden"></i></li>
+      <li>music3.mp3<i class="fa fa-play hidden"></i></li>
     </ol>
-    <audio>
-     <source src="" type="audio/mpeg">
+
+    <audio controls id="audioPlayer" src="">
      Your browser does not support the audio tag.
     </audio>
+
     <div class="controls">
       <div class="play"><i class="fa fa-play"></i></div>
       <div class="backward"><i class="fa fa-step-backward"></i></div>
       <div class="fordward"><i class="fa fa-step-forward"></i></div>
     </div>
   </body>
+
+  <script src="main.js"></script>
 </html>
